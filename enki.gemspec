@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
   s.version = "0.1"
-  s.date = "2011-7-13"
+  s.date = "2011-07-31"
 
   # Gem Details
   s.name = "enki"
