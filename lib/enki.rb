@@ -1,0 +1,1 @@
+Compass::Frameworks.register("enki", :path => "#{File.dirname(__FILE__)}/..")
