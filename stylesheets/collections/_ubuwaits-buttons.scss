@@ -457,7 +457,7 @@ button.download-itunes {
 button[disabled].download-itunes,
 button[disabled].download-itunes:hover,
 button[disabled].download-itunes:active {
-  @include linear-gradient(top, #dadada, #f3f3f3);
+  @include background-image(transparent, linear-gradient(top, #dadada, #f3f3f3));
   border-top: 1px solid #c5c5c5;
   border-right: 1px solid #cecece;
   border-bottom: 1px solid #d9d9d9;
