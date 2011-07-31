@@ -36,7 +36,7 @@ button.minimal {
 /* clean gray
 *******************************************************************************/
 @mixin clean-gray {       
-  @include background-image(linear-gradient(top, #eee, #ccc));      
+  @include background-image(transparent, linear-gradient(top, #eee, #ccc));      
   border: 1px solid #ccc;
   border-bottom: 1px solid #bbb;
   @include border-radius(3px);
@@ -49,7 +49,7 @@ button.minimal {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #ddd, #bbb));
+    @include background-image(transparent, linear-gradient(top, #ddd, #bbb));
     border: 1px solid #bbb;
     border-bottom: 1px solid #999;
     cursor: pointer;
@@ -70,7 +70,7 @@ button.clean-gray {
 /* cupid green (inspired by okcupid.com)
 *******************************************************************************/
 @mixin cupid-green {
-  @include background-image(linear-gradient(top, #7fbf4d, #63a62f));
+  @include background-image(transparent, linear-gradient(top, #7fbf4d, #63a62f));
   border: 1px solid #63a62f;
   border-bottom: 1px solid #5b992b;
   @include border-radius(3px);
@@ -84,7 +84,7 @@ button.clean-gray {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #76b347, #5e9e2e));
+    @include background-image(transparent, linear-gradient(top, #76b347, #5e9e2e));
     @include box-shadow(inset 0 1px 0 0 #8dbf67);
     cursor: pointer;
   }
@@ -103,7 +103,7 @@ button.cupid-green {
 /* cupid blue (inspired by okcupid.com)
 *******************************************************************************/
 @mixin cupid-blue {
-  @include background-image(linear-gradient(top, #d7e5f5, #cbe0f5));
+  @include background-image(transparent, linear-gradient(top, #d7e5f5, #cbe0f5));
   border-top: 1px solid #abbbcc;
   border-left: 1px solid #a7b6c7;
   border-bottom: 1px solid #a1afbf;
@@ -119,7 +119,7 @@ button.cupid-green {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #ccd9e8, #c1d4e8));
+    @include background-image(transparent, linear-gradient(top, #ccd9e8, #c1d4e8));
     border-top: 1px solid #a1afbf;
     border-left: 1px solid #9caaba;
     border-bottom: 1px solid #96a3b3;
@@ -144,7 +144,7 @@ button.cupid-blue {
    http://code.google.com/p/chromium/issues/detail?id=29427
 *******************************************************************************/
 @mixin blue-pill {
-  @include background-image(linear-gradient(top, #a5b8da, #7089b3));
+  @include background-image(transparent, linear-gradient(top, #a5b8da, #7089b3));
   border-top: 1px solid #758fba;
   border-right: 1px solid #6c84ab;
   border-bottom: 1px solid #5c6f91;
@@ -161,7 +161,7 @@ button.cupid-blue {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #9badcc, #687fa6));
+    @include background-image(transparent, linear-gradient(top, #9badcc, #687fa6));
     border-top: 1px solid #6d86ad;
     border-right: 1px solid #647a9e;
     border-bottom: 1px solid #546685;
@@ -183,7 +183,7 @@ button.blue-pill {
 /* dribbble (inspired by dribbble.com)
 *******************************************************************************/
 @mixin dribbble {
-  @include background-image(linear-gradient(top, #F26895 0, #F26895 50%, #F15587 50%, #F15587 100%));
+  @include background-image(transparent, linear-gradient(top, #F26895 0, #F26895 50%, #F15587 50%, #F15587 100%));
   border: 0;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -197,12 +197,12 @@ button.blue-pill {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #e2558b 0, #e2558b 50%, #df3e7b 50%, #df3e7b 100%));
+    @include background-image(transparent, linear-gradient(top, #e2558b 0, #e2558b 50%, #df3e7b 50%, #df3e7b 100%));
     cursor: pointer;
   }
 
   &:active {
-    @include background-image(linear-gradient(top, #c94477 0, #c94477 50%, #c22b65 50%, #c22b65 100%));
+    @include background-image(transparent, linear-gradient(top, #c94477 0, #c94477 50%, #c22b65 50%, #c22b65 100%));
   }
 }
 
@@ -213,7 +213,7 @@ button.dribbble {
 /* slick black
 *******************************************************************************/
 @mixin slick-black {
-  @include background-image(linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%));
+  @include background-image(transparent, linear-gradient(top, rgba(50, 50, 50, 0.9) 0%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%));
   border: 0;
   @include border-radius(4px);
   @include box-shadow(inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1));
@@ -225,12 +225,12 @@ button.dribbble {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, rgba(70, 70, 70, 0.9) 0%, rgba(50, 50, 50, 0.9) 50%, rgba(40, 40, 40, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%));
+    @include background-image(transparent, linear-gradient(top, rgba(70, 70, 70, 0.9) 0%, rgba(50, 50, 50, 0.9) 50%, rgba(40, 40, 40, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%));
     cursor: pointer;
   }
 
   &:active {
-    @include background-image(linear-gradient(top, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 50%, rgba(10, 10, 10, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%));
+    @include background-image(transparent, linear-gradient(top, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 50%, rgba(10, 10, 10, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%));
   }
 }
 
@@ -241,7 +241,7 @@ button.slick-black {
 /* thoughtbot (inspired by thoughtbot.com)
 *******************************************************************************/
 @mixin thoughtbot {
-  @include background-image(linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%));
+  @includebackground-image(transparent, linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%));
   border: 1px solid #951100;
   @include border-radius(5px);
   @include box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333);
@@ -254,12 +254,12 @@ button.slick-black {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%));
+    @include background-image(transparent, linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%));
     cursor: pointer;
   }
 
   &:active {
-    @include background-image(linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%));
+    @include background-image(transparent, linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%));
     @include box-shadow(inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4));
   }
 }
@@ -306,7 +306,7 @@ button.punch {
 /* blue candy (inspired by Apple iOS buttons)
 *******************************************************************************/
 @mixin blue-candy {
-  @include background-image(linear-gradient(top, #779be9 0%, #376fe0 50%, #2260dd 50%, #2463de 100%));
+  @include background-image(transparent, linear-gradient(top, #779be9 0%, #376fe0 50%, #2260dd 50%, #2463de 100%));
   @include border-radius(3px);
   color: #fff;
   font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
@@ -318,7 +318,7 @@ button.punch {
   -webkit-background-clip: padding-box;
 
   &:hover {
-    @include background-image(linear-gradient(top, #6989cf 0%, #3263c7 50%, #1d55c4 50%, #1d55c4 100%));
+    @include background-image(transparent, linear-gradient(top, #6989cf 0%, #3263c7 50%, #1d55c4 50%, #1d55c4 100%));
     -webkit-background-clip: padding-box;
     cursor: pointer;
   }
@@ -341,7 +341,7 @@ button.blue-candy {
 /* purple candy
 *******************************************************************************/
 @mixin purple-candy {
-  @include background-image(linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%));
+  @include background-image(transparent, linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%));
   @include border-radius(3px);
   color: #fff;
   font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
@@ -353,7 +353,7 @@ button.blue-candy {
   -webkit-background-clip: padding-box;
 
   &:hover {
-    @include background-image(linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%));
+    @include background-image(transparent, linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%));
     -webkit-background-clip: padding-box;
     cursor: pointer;
   }
@@ -376,7 +376,7 @@ button.purple-candy {
 /* shiny blue (inspired by rdio iphone interface)
 *******************************************************************************/
 @mixin shiny-blue {
-  @include background-image(linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%));
+  @include background-image(transparent, linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%));
   border-top: 1px solid #1f58cc;
   border-right: 1px solid #1b4db3;
   border-bottom: 1px solid #174299;
@@ -390,7 +390,7 @@ button.purple-candy {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%));
+    @include background-image(transparent, linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%));
     cursor: pointer;
   }
 
@@ -412,7 +412,7 @@ button.shiny-blue {
    http://robots.thoughtbot.com/post/2718077289/make-css3-buttons-like-a-boss
 *******************************************************************************/
 @mixin download-itunes {
-  @include background-image(linear-gradient(top, #52a8e8, #377ad0));
+  @include background-image(transparent, linear-gradient(top, #52a8e8, #377ad0));
   border-top: 1px solid #4081af;
   border-right: 1px solid #2e69a3;
   border-bottom: 1px solid #20559a;
@@ -429,7 +429,7 @@ button.shiny-blue {
   -webkit-background-clip: padding-box;
 
   &:hover {
-    @include background-image(linear-gradient(top, #3e9ee5 0%, #206bcb 100%));
+    @include background-image(transparent, linear-gradient(top, #3e9ee5 0%, #206bcb 100%));
     border-top: 1px solid #2a73a6;
     border-right: 1px solid #165899;
     border-bottom: 1px solid #07428f;
@@ -476,7 +476,7 @@ button.download-itunes::-moz-focus-inner {
 /* skip (inspired by okcupid iphone interface)
 *******************************************************************************/
 @mixin skip {
-  @include background-image(linear-gradient(top, #8c9cbf 0%, #546a9e 50%, #36518f 50%, #3d5691 100%));
+  @include background-image(transparent, linear-gradient(top, #8c9cbf 0%, #546a9e 50%, #36518f 50%, #3d5691 100%));
   border: 1px solid #172d6e;
   border-bottom: 1px solid #0e1d45;
   @include border-radius(5px);
@@ -490,7 +490,7 @@ button.download-itunes::-moz-focus-inner {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #7f8dad 0%, #4a5e8c 50%, #2f477d 50%, #364c80 100%));
+    @include background-image(transparent, linear-gradient(top, #7f8dad 0%, #4a5e8c 50%, #2f477d 50%, #364c80 100%));
     cursor: pointer;
   }
 
@@ -506,7 +506,7 @@ button.skip {
 /* minimal indent (inspired by okcupid iphone interface)
 *******************************************************************************/
 @mixin minimal-indent {
-  @include background-image(linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%));
+  @include background-image(transparent, linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%));
   border-right: 1px solid #dfdfdf;
   border-bottom: 1px solid #b4b4b4;
   border-right: 1px solid #dfdfdf;
@@ -520,7 +520,7 @@ button.skip {
   width: 150px;
 
   &:hover {
-    @include background-image(linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%));
+    @include background-image(transparent, linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%));
     @include box-shadow(inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3);
   }
 
@@ -530,7 +530,7 @@ button.skip {
 }
 
 div.indent {
-  @include background-image(linear-gradient(top, #e2e2e2, #fafafa));
+  @include background-image(transparent, linear-gradient(top, #e2e2e2, #fafafa));
   @include border-radius(8px);
   margin: 50px auto 0;
   padding: 10px 0;
