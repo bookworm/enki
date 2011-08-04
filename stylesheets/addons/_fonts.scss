@@ -1,7 +1,39 @@
-@mixin museo ($weight: 100) {
-  font-family: "Museo $weight", "Museo$weight", "Museo-$weight", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
-}       
+@mixin museo1 () {
+  font-family: "Museo 100", "Museo100", "Museo-100", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+} 
 
-@mixin helvetica ($weight: Light) {
-  font-family: 'HelveticaNeue-$weight', 'Helvetica Neue $weight', 'Helvetica-Neue-$weight','Helvetica-Neue $weight', 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
-}
+@mixin museo3 () {
+  font-family: "Museo 300", "Museo300", "Museo-300", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+}     
+
+@mixin museo5 () {
+  font-family: "Museo 500", "Museo500", "Museo-500", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+} 
+
+@mixin museo7 () {
+  font-family: "Museo 700", "Museo700", "Museo-700", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+}     
+       
+@mixin museo9 () {
+  font-family: "Museo 900", "Museo900", "Museo-900", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+}    
+
+@mixin helveticaUL () {
+  font-family: "HelveticaNeue-Ultralight", "Helvetica Neue Ultralight", "Helvetica-Neue-Ultralight", "Helvetica-Neue Ultralight", 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
+}     
+
+@mixin helveticaL () {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica-Neue-Light", "Helvetica-Neue Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
+} 
+
+@mixin helveticaN () {
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", Arial, Helvetica, sans-serif;   ;
+}           
+
+@mixin helveticaB () {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica-Neue-Bold", "Helvetica-Neue Bold", 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
+}      
+
+@mixin helveticaEB () {
+  font-family: "HelveticaNeue-ExtraBold", "Helvetica Neue ExtraBold", "Helvetica-Neue-ExtraBold", "Helvetica-Neue ExtraBold", 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
+}      
