@@ -1,5 +1,3 @@
-
-
 /* minimal
 *******************************************************************************/
 @mixin minimal {
@@ -27,10 +25,6 @@
     @include box-shadow(inset 0 0 1px 1px #e3e3e3);
     color: #000;
   }
-}
-
-button.minimal {
-  @include minimal;
 }
 
 /* clean gray
@@ -65,10 +59,6 @@ button.minimal {
   }
 }
 
-button.clean-gray {
-  @include clean-gray;
-}
-
 /* cupid green (inspired by okcupid.com)
 *******************************************************************************/
 @mixin cupid-green {  
@@ -99,10 +89,6 @@ button.clean-gray {
     border-bottom: 1px solid #538c27;
     @include box-shadow(inset 0 0 8px 4px #548c29, 0 1px 0 0 #eee);
   }
-}
-
-button.cupid-green {
-  @include cupid-green;
 }
 
 /* cupid blue (inspired by okcupid.com)
@@ -140,10 +126,6 @@ button.cupid-green {
     border: 1px solid #8c98a7;
     @include box-shadow(inset 0 0 4px 2px #abbccf, 0 0 1px 0 #eee);
   }
-}
-
-button.cupid-blue {
-  @include cupid-blue;
 }
 
 /* blue pill (inspired by iTunes)
@@ -185,10 +167,6 @@ button.cupid-blue {
   }
 }
 
-button.blue-pill {
-  @include blue-pill;
-}
-
 /* dribbble (inspired by dribbble.com)
 *******************************************************************************/
 @mixin dribbble {   
@@ -218,10 +196,6 @@ button.blue-pill {
   }
 }
 
-button.dribbble {
-  @include dribbble;
-}
-
 /* slick black
 *******************************************************************************/
 @mixin slick-black {    
@@ -247,10 +221,6 @@ button.dribbble {
     background-color: rgba(30, 30, 30, 0.9);
     @include background-image(transparent, linear-gradient(top, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 50%, rgba(10, 10, 10, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%));
   }
-}
-
-button.slick-black {
-  @include slick-black;
 }
 
 /* thoughtbot (inspired by thoughtbot.com)
@@ -282,10 +252,6 @@ button.slick-black {
   }
 }
 
-button.thoughtbot {
-  @include thoughtbot;
-}
-
 /* punch
 *******************************************************************************/
 @mixin punch {
@@ -315,10 +281,6 @@ button.thoughtbot {
     @include box-shadow(inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111);
     margin-top: 58px;
   }
-}
-
-button.punch {
-  @include punch;
 }
 
 /* blue candy (inspired by Apple iOS buttons)
@@ -354,10 +316,6 @@ button.punch {
   }
 }
 
-button.blue-candy {
-  @include blue-candy;
-}
-
 /* purple candy
 *******************************************************************************/
 @mixin purple-candy {   
@@ -391,10 +349,6 @@ button.blue-candy {
   }
 }
 
-button.purple-candy {
-  @include purple-candy;
-}
-
 /* shiny blue (inspired by rdio iphone interface)
 *******************************************************************************/
 @mixin shiny-blue {  
@@ -425,10 +379,6 @@ button.purple-candy {
     border-left: 1px solid #174299;
     @include box-shadow(inset 0 0 5px 2px #1a47a0, 0 1px 0 #eee);
   }
-}
-
-button.shiny-blue {
-  @include shiny-blue;
 }
 
 /* download itunes
@@ -476,29 +426,6 @@ button.shiny-blue {
   }
 }
 
-button.download-itunes {
-  @include download-itunes;
-}
-
-button[disabled].download-itunes,
-button[disabled].download-itunes:hover,
-button[disabled].download-itunes:active {  
-  background-color: #dadada;
-  @include background-image(transparent, linear-gradient(top, #dadada, #f3f3f3));
-  border-top: 1px solid #c5c5c5;
-  border-right: 1px solid #cecece;
-  border-bottom: 1px solid #d9d9d9;
-  border-left: 1px solid #cecece;
-  @include box-shadow(none);
-  color: #8f8f8f;
-  cursor: not-allowed;
-  text-shadow: 0 -1px 1px #ebebeb;
-}
-
-button.download-itunes::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
 
 /* skip (inspired by okcupid iphone interface)
 *******************************************************************************/
@@ -526,10 +453,6 @@ button.download-itunes::-moz-focus-inner {
   &:active {
     @include box-shadow(inset 0 0 20px 0 #1d2845, 0 1px 0 #fff);
   }
-}
-
-button.skip {
-  @include skip;
 }
 
 /* minimal indent (inspired by okcupid iphone interface)
@@ -568,10 +491,6 @@ div.indent {
   width: 170px;
 }
 
-button.minimal-indent {
-  @include minimal-indent;
-}
-
 /* webkit badge
 *******************************************************************************/
 @mixin webkit-badge {
@@ -599,10 +518,6 @@ button.minimal-indent {
   &:active {
     background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d43c28), color-stop(0.5, #ad3224), color-stop(0.5, #9c1500), color-stop(1, #700d00));
   }
-}
-
-button.webkit-badge {
-  @include webkit-badge;
 }
 
 /* webkit seal
@@ -634,10 +549,6 @@ button.webkit-badge {
   }
 }
 
-button.webkit-seal {
-  @include webkit-seal;
-}
-
 /* webkit check
 *******************************************************************************/
 @mixin webkit-check {
@@ -664,9 +575,6 @@ button.webkit-seal {
   }
 }
 
-button.webkit-check {
-  @include webkit-check;
-}
 
 /* disabled button styles
    works with this markup: <button disabled="disabled">Submit</button>
@@ -681,7 +589,6 @@ button[disabled]:active {
   cursor: not-allowed;
   text-shadow: none;
 }
-
 
 /* general styles */
 body {
