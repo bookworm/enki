@@ -1,0 +1,7 @@
+@mixin museo ($weight: 100) {
+  font-family: "Museo $weight", "Museo$weight", "Museo-$weight", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+}       
+
+@mixin helvetica ($weight: Light) {
+  font-family: 'HelveticaNeue-$weight', 'Helvetica Neue $weight', 'Helvetica-Neue-$weight','Helvetica-Neue $weight', 'Helvetica Neue', Arial, Helvetica, sans-serif;   ;
+}
