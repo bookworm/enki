@@ -48,7 +48,7 @@
 
     @include box-shadow (inset 0 1px 0 0 $inset-shadow-hover);
     cursor: pointer;
-    @include background-image(linear-gradient($base-color-hover, $stop-gradient-hover));
+    @include background-image($base-color-hover, linear-gradient($base-color-hover, $stop-gradient-hover));
   }
 
   &:active {
