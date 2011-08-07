@@ -29,14 +29,14 @@
     $color: hsl(0, 0, 20%);
     $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
   }
-
+             
   border: 1px solid $border;
   @include border-radius (3px);
   @include box-shadow (inset 0 1px 0 0 $inset-shadow);
   color: $color;
   display: inline;
   font: bold 11px 'lucida grande', helvetica neue, helvetica, arial, sans-serif;
-  @include background-image(linear-gradient($base-color, $stop-gradient));
+  @include background-image($base-color, linear-gradient($base-color, $stop-gradient));
   padding: 6px 18px 7px;
   text-shadow: 0 1px 0 $text-shadow;
   -webkit-background-clip: padding-box;
@@ -76,7 +76,7 @@
     $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
   }
 
-  @include background-image(linear-gradient(top, $base-color 0%, $second-stop 50%, $third-stop 50%, $fourth-stop 100%));
+  @include background-image($base-color, linear-gradient(top, $base-color 0%, $second-stop 50%, $third-stop 50%, $fourth-stop 100%));
   border: 1px solid $border-top;
   border-color: $border-top $border-sides $border-bottom;
   @include border-radius (4px);
@@ -94,7 +94,7 @@
     $third-stop-hover: adjust-color($base-color, $saturation: 23%, $lightness: -26%);
     $fourth-stop-hover: adjust-color($base-color, $saturation: 16%, $lightness: -23%);
 
-    @include background-image(linear-gradient(top, $first-stop-hover 0%, $second-stop-hover 50%, $third-stop-hover 50%, $fourth-stop-hover 100%));
+    @include background-image($first-stop-hover, linear-gradient(top, $first-stop-hover 0%, $second-stop-hover 50%, $third-stop-hover 50%, $fourth-stop-hover 100%));
     cursor: pointer;
   }
 
@@ -124,7 +124,7 @@
     $text-shadow: adjust-color($base-color, $saturation: 10%, $lightness: 4%);
   }
 
-  @include background-image(linear-gradient($base-color, $stop-gradient));
+  @include background-image($base-color, linear-gradient($base-color, $stop-gradient));
   border: 1px solid $border-top;
   border-color: $border-top $border-sides $border-bottom;
   @include border-radius(16px);
@@ -149,7 +149,7 @@
     $inset-shadow-hover: adjust-color($base-color, $saturation: -1%, $lightness: 3%);
     $text-shadow-hover: adjust-color($base-color, $hue: 5, $saturation: -5%, $lightness: -22%);
 
-    @include background-image(linear-gradient($base-color-hover, $stop-gradient-hover));
+    @include background-image($base-color-hover, linear-gradient($base-color-hover, $stop-gradient-hover));
     border: 1px solid $border-top;
     border-color: $border-top $border-sides $border-bottom;
     @include box-shadow(inset 0 1px 0 0 $inset-shadow-hover);
