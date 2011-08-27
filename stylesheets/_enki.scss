@@ -7,13 +7,23 @@
 // CSS3 Mixins     
 @import "compass/css3";
 @import "css3/animation";
-@import "css3/flex-box";
+@import "css3/flex-box";         
+@import "css3/gradient"; 
+@import "css3/misc"; 
 
 // Addons
 @import "addons/button";
 @import "addons/position";
 @import "addons/animation-keyframes";    
 @import "addons/fonts";   
+@import "addons/size";
 
-// Collections
+// Collections  
+@import "collections/colors";
 @import "collections/ubuwaits-buttons";   
+@import "collections/buttons";
+@import "collections/forms";
+@import "collections/headers";
+@import "collections/modals";
+@import "collections/navigation"; 
+@import "collections/tables";
