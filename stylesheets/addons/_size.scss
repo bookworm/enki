@@ -3,5 +3,5 @@
 	width: $width;
 }
 @mixin square($size: 5px) {
-	$include size($size, $size);
+	@include size($size, $size);
 }
