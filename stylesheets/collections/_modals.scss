@@ -45,7 +45,7 @@
     border-top: 1px solid #ddd;
     @include border-radius(0 0 6px 6px);
     @include box-shadow(inset 0 1px 0 #fff);
-    .clearfix();
+    @include clearfix();
     margin-bottom: 0;
     .btn {
       float: right;
